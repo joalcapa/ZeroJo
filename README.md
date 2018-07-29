@@ -1,0 +1,2 @@
+# ZeroJo
+Api standard GraphQL
