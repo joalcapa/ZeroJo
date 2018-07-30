@@ -1,6 +1,9 @@
 {
   "name": "ZeroJo",
   "version": "0.0.1",
+  "scripts": {
+    "start": "node ./src/app.js"
+  },
   "dependencies": {
     "express": "^4.16.3",
     "mysql2": "^1.5.3",
