@@ -1,3 +1,5 @@
+var zerojo = require("./zerojo/")();
+
 module.exports = function () {
 
     var _app;
@@ -5,8 +7,14 @@ module.exports = function () {
     var run = function() {
         _app = require('express')();
 
+        _app.get('/zj', function (req, res) {
+            zerojo.init(req);
+            var response = zerojo.response();
+            res.send(response);
+        });
+
         _app.listen(3000, function () {
-            console.log('Example app listening on port 3000!');
+            console.log('server ZeroJo listening on port 3000');
         });
     }
 

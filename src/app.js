@@ -1,3 +1,3 @@
-var app = require("./index.js")();
+var app = require("./")();
 console.log(app);
 app.run();
