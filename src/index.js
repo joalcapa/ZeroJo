@@ -9,7 +9,7 @@ module.exports = function () {
 
         _app.get('/zj', function (req, res) {
             zerojo.init(req);
-            var response = zerojo.response();
+            var response = zerojo.makeResponse();
             res.send(response);
         });
 
