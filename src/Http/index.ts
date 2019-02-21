@@ -1,5 +1,3 @@
-import { serve }                    from "https://deno.land/x/std@v0.2.10/http/server.ts";
-
 export class Http {
 
     private static instance: Http;
